@@ -1,0 +1,27 @@
+PODS:
+  - FANOCBaseConfig (0.1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - FANOCBaseConfig (from `../`)
+  - FBSnapshotTestCase
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  FANOCBaseConfig:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FANOCBaseConfig: 6ec270cbf5b0c6520ac2c34713f28a3fe4c01fa7
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+
+PODFILE CHECKSUM: aac944bf2b2fb4962717415c7c7eaa66dd73bd9e
+
+COCOAPODS: 1.10.2
