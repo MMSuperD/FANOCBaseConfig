@@ -1,10 +1,14 @@
 PODS:
-  - FANOCBaseConfig (0.1.0)
+  - FANOCBaseConfig (0.1.0):
+    - Masonry (~> 1.1.0)
+    - MJRefresh (~> 3.7.5)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
+  - Masonry (1.1.0)
+  - MJRefresh (3.7.5)
 
 DEPENDENCIES:
   - FANOCBaseConfig (from `../`)
@@ -13,14 +17,18 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - FBSnapshotTestCase
+    - Masonry
+    - MJRefresh
 
 EXTERNAL SOURCES:
   FANOCBaseConfig:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FANOCBaseConfig: 6ec270cbf5b0c6520ac2c34713f28a3fe4c01fa7
+  FANOCBaseConfig: 1e99d4b6d3a86e021000a0a540621833b912d86d
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
 
 PODFILE CHECKSUM: aac944bf2b2fb4962717415c7c7eaa66dd73bd9e
 
