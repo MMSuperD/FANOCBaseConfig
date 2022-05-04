@@ -1,5 +1,21 @@
 PODS:
-  - FANOCBaseConfig (0.1.0):
+  - FANOCBaseConfig (0.1.1):
+    - FANOCBaseConfig/FAN_ConstFile (= 0.1.1)
+    - FANOCBaseConfig/FAN_Controller (= 0.1.1)
+    - FANOCBaseConfig/FAN_Extension (= 0.1.1)
+    - FANOCBaseConfig/FAN_View (= 0.1.1)
+    - Masonry (~> 1.1.0)
+    - MJRefresh (~> 3.7.5)
+  - FANOCBaseConfig/FAN_ConstFile (0.1.1):
+    - Masonry (~> 1.1.0)
+    - MJRefresh (~> 3.7.5)
+  - FANOCBaseConfig/FAN_Controller (0.1.1):
+    - Masonry (~> 1.1.0)
+    - MJRefresh (~> 3.7.5)
+  - FANOCBaseConfig/FAN_Extension (0.1.1):
+    - Masonry (~> 1.1.0)
+    - MJRefresh (~> 3.7.5)
+  - FANOCBaseConfig/FAN_View (0.1.1):
     - Masonry (~> 1.1.0)
     - MJRefresh (~> 3.7.5)
   - FBSnapshotTestCase (2.1.4):
@@ -25,7 +41,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FANOCBaseConfig: 1e99d4b6d3a86e021000a0a540621833b912d86d
+  FANOCBaseConfig: a60e38397dbdf82e67202a8c40ef20f4f3461cf3
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961

@@ -32,19 +32,19 @@ TODO: Add long description of the pod here.
   
   # 这个是子组件
   s.subspec 'FAN_ConstFile' do |ss|
-      ss.source_files = 'FANOCBaseConfig/FAN_ConstFile/**/*'
+      ss.source_files = 'FANOCBaseConfig/Classes/FAN_ConstFile/**/*'
   end
   
   s.subspec 'FAN_Controller' do |ss|
-      ss.source_files = 'FANOCBaseConfig/FAN_Controller/**/*'
+      ss.source_files = 'FANOCBaseConfig/Classes/FAN_Controller/**/*'
   end
   
   s.subspec 'FAN_Extension' do |ss|
-      ss.source_files = 'FANOCBaseConfig/FAN_Extension/**/*'
+      ss.source_files = 'FANOCBaseConfig/Classes/FAN_Extension/**/*'
   end
   
   s.subspec 'FAN_View' do |ss|
-      ss.source_files = 'FANOCBaseConfig/FAN_View/**/*'
+      ss.source_files = 'FANOCBaseConfig/Classes/FAN_View/**/*'
   end
 
   s.source_files = 'FANOCBaseConfig/Classes/**/*'
