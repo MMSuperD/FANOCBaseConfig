@@ -53,9 +53,9 @@ TODO: Add long description of the pod here.
   #   'FANOCBaseConfig' => ['FANOCBaseConfig/Assets/*.png']
   # }
   
-  s.resource_bundles = {
-      'FANOCBaseConfig' => ['FANOCBaseConfig/Assets/**/*.{xcassets,txt,png,xib,nib,plist,xcdatamodel,mom,json,salite,yaml,zip,html,css,js,sql,xml,dat,ini,pem,gif,lproj}']
-  }
+#  s.resource_bundles = {
+#      'FANOCBaseConfig' => ['FANOCBaseConfig/Assets/**/*.{xcassets,txt,png,xib,nib,plist,xcdatamodel,mom,json,salite,yaml,zip,html,css,js,sql,xml,dat,ini,pem,gif,lproj}']
+#  }
 
   s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'MapKit'
