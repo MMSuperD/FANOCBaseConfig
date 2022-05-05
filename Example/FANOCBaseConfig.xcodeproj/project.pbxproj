@@ -248,6 +248,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = MMSuperD;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 48XD7V73T2;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -517,6 +520,7 @@
 			baseConfigurationReference = 280AFDF5931D3C04086F5311 /* Pods-FANOCBaseConfig_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 48XD7V73T2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FANOCBaseConfig/FANOCBaseConfig-Prefix.pch";
 				INFOPLIST_FILE = "FANOCBaseConfig/FANOCBaseConfig-Info.plist";
@@ -534,6 +538,7 @@
 			baseConfigurationReference = 76AE139D51F964786412D70F /* Pods-FANOCBaseConfig_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 48XD7V73T2;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FANOCBaseConfig/FANOCBaseConfig-Prefix.pch";
 				INFOPLIST_FILE = "FANOCBaseConfig/FANOCBaseConfig-Info.plist";
