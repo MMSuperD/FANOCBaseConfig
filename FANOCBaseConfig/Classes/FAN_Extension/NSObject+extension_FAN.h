@@ -14,6 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)fan_setDataDictionary:(NSDictionary *)dataDictionary;
 -(NSDictionary*)fan_dataDictionary;
 
+/**
+ 交换两个方法
+ */
+- (void)method_exchangeClassStr:(NSString *)clsString selector:(SEL)sourceSel selector:(SEL)newSel;
+
 @end
 
 NS_ASSUME_NONNULL_END

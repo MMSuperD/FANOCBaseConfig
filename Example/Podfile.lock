@@ -1,21 +1,5 @@
 PODS:
   - FANOCBaseConfig (0.1.1):
-    - FANOCBaseConfig/FAN_ConstFile (= 0.1.1)
-    - FANOCBaseConfig/FAN_Controller (= 0.1.1)
-    - FANOCBaseConfig/FAN_Extension (= 0.1.1)
-    - FANOCBaseConfig/FAN_View (= 0.1.1)
-    - Masonry (~> 1.1.0)
-    - MJRefresh (~> 3.7.5)
-  - FANOCBaseConfig/FAN_ConstFile (0.1.1):
-    - Masonry (~> 1.1.0)
-    - MJRefresh (~> 3.7.5)
-  - FANOCBaseConfig/FAN_Controller (0.1.1):
-    - Masonry (~> 1.1.0)
-    - MJRefresh (~> 3.7.5)
-  - FANOCBaseConfig/FAN_Extension (0.1.1):
-    - Masonry (~> 1.1.0)
-    - MJRefresh (~> 3.7.5)
-  - FANOCBaseConfig/FAN_View (0.1.1):
     - Masonry (~> 1.1.0)
     - MJRefresh (~> 3.7.5)
   - FBSnapshotTestCase (2.1.4):
@@ -31,7 +15,7 @@ DEPENDENCIES:
   - FBSnapshotTestCase
 
 SPEC REPOS:
-  trunk:
+  https://gitee.com/mirrors/CocoaPods-Specs.git:
     - FBSnapshotTestCase
     - Masonry
     - MJRefresh
@@ -41,11 +25,11 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FANOCBaseConfig: c1b7e00a4e7e34d92fdd10f6e098f6cf40f5c566
+  FANOCBaseConfig: 72efcd553127beb724fd9668c1eae922fa0049f7
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
 
-PODFILE CHECKSUM: e905997a2ba944d1cba58943a384b9f43fbc8ddf
+PODFILE CHECKSUM: affea544167ede747af66a97b8c94b7c2853f747
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.10.1

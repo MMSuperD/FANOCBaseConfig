@@ -190,6 +190,7 @@ typedef  void(^TapBlock_FAN)(UIView *tapView);
     self.tapBlock = tapBlock;
 }
 
+
 - (void)actionTap:(UITapGestureRecognizer *)tap{
     UIView *tapView = tap.view;
     if (self.tapBlock) {
@@ -205,6 +206,17 @@ typedef  void(^TapBlock_FAN)(UIView *tapView);
 - (TapBlock_FAN)tapBlock{
 //    return objc_getAssociatedObject(self, _cmd);
     return objc_getAssociatedObject(self, (__bridge const void * _Nonnull)(self));
+}
+
+/**
+ 交换两个方法
+ */
++ (void)method_exchangeClassStr:(NSString *)clsString selector:(SEL)sourceSel selector:(SEL)newSel{
+    
+    Class cls = NSClassFromString(clsString);
+    Method method1 = class_getInstanceMethod(cls, sourceSel);
+    Method method2 = class_getInstanceMethod(cls, newSel);
+    method_exchangeImplementations(method1, method2);
 }
 
 

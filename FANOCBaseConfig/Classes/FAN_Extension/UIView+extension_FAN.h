@@ -76,6 +76,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)tapClick:(void(^)(UIView *clickView))tapView;
 
+/**
+ 交换两个方法
+ */
++ (void)method_exchangeClassStr:(NSString *)clsString selector:(SEL)sourceSel selector:(SEL)newSel;
+
 @end
 
 NS_ASSUME_NONNULL_END

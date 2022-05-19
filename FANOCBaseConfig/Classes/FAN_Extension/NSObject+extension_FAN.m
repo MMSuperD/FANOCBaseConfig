@@ -23,6 +23,19 @@
     //根据属性列表获取属性值
     return [self fan_propertiesAndValuesDictionary:self properties:properties];
 }
+
+/**
+ 交换两个方法
+ */
+- (void)method_exchangeClassStr:(NSString *)clsString selector:(SEL)sourceSel selector:(SEL)newSel{
+    
+    Class cls = NSClassFromString(clsString);
+    Method method1 = class_getInstanceMethod(cls, sourceSel);
+    Method method2 = class_getInstanceMethod(cls, newSel);
+    method_exchangeImplementations(method1, method2);
+}
+
+
 #pragma mark--- Private method
 //通过属性名字拼凑 setter 方法
 -(SEL)fan_getSetterSelWithAttibuteName:(NSString *)attributeName
