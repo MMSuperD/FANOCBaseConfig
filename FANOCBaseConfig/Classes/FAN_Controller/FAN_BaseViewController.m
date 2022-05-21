@@ -256,7 +256,7 @@
     if (!_nvView) {
         _nvView = [UIView new];
         _nvView.backgroundColor = [UIColor whiteColor];
-        _nvView.frame = CGRectMake(0, 0, SCREEN_WIDTH_FAN, NAVBAR_HEIGHT_FAN);
+        _nvView.frame = CGRectMake(0, 0, SCREEN_WIDTH_FAN, STATUSBAR_NAVBAR_HEIGHT_FAN);
     }
     return _nvView;
 }
