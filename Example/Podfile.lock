@@ -1,5 +1,5 @@
 PODS:
-  - FANOCBaseConfig (0.1.1):
+  - FANOCBaseConfig (0.1.2):
     - Masonry (~> 1.1.0)
     - MJRefresh (~> 3.7.5)
   - FBSnapshotTestCase (2.1.4):
@@ -25,7 +25,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FANOCBaseConfig: 72efcd553127beb724fd9668c1eae922fa0049f7
+  FANOCBaseConfig: bf9a59ce3484a3a14579d033603bc76070a3ca15
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
