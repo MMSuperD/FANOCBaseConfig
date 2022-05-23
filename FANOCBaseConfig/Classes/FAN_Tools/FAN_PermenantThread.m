@@ -7,7 +7,7 @@
 
 #import "FAN_PermenantThread.h"
 
-/** MJThread **/
+/** FAN_BaseThread **/
 @interface FAN_BaseThread : NSThread
 @end
 @implementation FAN_BaseThread
