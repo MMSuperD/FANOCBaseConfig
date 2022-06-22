@@ -296,7 +296,7 @@
     if (!_rightNvBarBtn) {
         _rightNvBarBtn = [UIButton buttonWithType:0];
         _rightNvBarBtn.titleLabel.font = [UIFont systemFontOfSize:14];;
-        _rightNvBarBtn.frame = CGRectMake(SCREEN_WIDTH_FAN - 60 - 15, STATUSBAR_NAVBAR_HEIGHT_FAN, 60, 44);
+        _rightNvBarBtn.frame = CGRectMake(SCREEN_WIDTH_FAN - 60 - 15, SAVEAREA_TOP_FAN, 60, 44);
         [_rightNvBarBtn setTitleColor:[UIColor fan_colorWithHexString:@"#333333"] forState:UIControlStateNormal];
         [_rightNvBarBtn setTitle:@"" forState:UIControlStateNormal];
         [_rightNvBarBtn addTarget:self action:@selector(rightButtonClick:) forControlEvents:UIControlEventTouchUpInside];
