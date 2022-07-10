@@ -6,7 +6,7 @@
 //
 
 #import "FAN_BaseViewController.h"
-
+#import <FANOCBaseConfig/UIImage+extension.h>
 @interface FAN_BaseViewController ()
 
 @end
@@ -235,20 +235,40 @@
 
 // 左边按钮点击事件
 - (void)leftButtonClick:(UIButton *)sender {
-    if (self.navigationController) {
-        for (UIView *tempView in [UIApplication sharedApplication].keyWindow.subviews) {
-            if (tempView.tag == 10008) {
-                [tempView removeFromSuperview];
-                break;
-            }
+
+    
+    if (self.presentingViewController) {
+        
+        [self _dismissCoverView];
+        [self dismissViewControllerAnimated:YES completion:nil];
+        
+    } else {
+        
+        if (self.navigationController) {
+            [self _dismissCoverView];
+            [self.navigationController popViewControllerAnimated:YES];
+            return;
         }
-        [self.navigationController popViewControllerAnimated:YES];
+        
     }
+
 }
+
+
 
 // 右边按钮点击事件
 - (void)rightButtonClick:(UIButton *)sender {
 
+}
+
+#pragma mark private func
+- (void)_dismissCoverView{
+    for (UIView *tempView in [UIApplication sharedApplication].keyWindow.subviews) {
+        if (tempView.tag == 10008) {
+            [tempView removeFromSuperview];
+            break;
+        }
+    }
 }
 
 #pragma mark - getter
@@ -285,8 +305,10 @@
     if (!_leftNvBarBtn) {
         _leftNvBarBtn = [UIButton buttonWithType:0];
 //        _leftNvBarBtn.frame = CGRectMake(15, (44 - 16)/2 + XZFNavHeight, 10, 16);
+        
         _leftNvBarBtn.frame = CGRectMake(0, SAVEAREA_TOP_FAN, 40, NAVBAR_HEIGHT_FAN);
-        [_leftNvBarBtn setImage:[UIImage imageNamed:@"icon_back_4.8"] forState:UIControlStateNormal];
+//        [_leftNvBarBtn setImage:[UIImage imageNamed:@"icon_back_4.8"] forState:UIControlStateNormal];
+        [_leftNvBarBtn setImage:[UIImage fan_imageWithName:@"back"] forState:UIControlStateNormal];
         [_leftNvBarBtn addTarget:self action:@selector(leftButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _leftNvBarBtn;

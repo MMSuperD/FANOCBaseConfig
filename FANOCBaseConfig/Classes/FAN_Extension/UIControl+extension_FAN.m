@@ -12,7 +12,9 @@
 
 + (void)load
 {
-    dispatch_once_t once_token;
+    
+    
+    static dispatch_once_t once_token;
     dispatch_once(&once_token, ^{
         [self method_exchangeClassStr:@"UIControl" selector:@selector(sendAction:to:forEvent:) selector:@selector(fan_sendAction:to:forEvent:)];
 

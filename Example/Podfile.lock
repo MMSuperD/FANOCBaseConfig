@@ -25,7 +25,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FANOCBaseConfig: 8212f294e7bc775d51d3994f30727645f657e85a
+  FANOCBaseConfig: df11fb128ef70b28b935cb891fdb4b274fbd8d51
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961

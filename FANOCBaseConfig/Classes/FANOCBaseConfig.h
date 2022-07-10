@@ -30,6 +30,8 @@
 #import "UIColor+extension_FAN.h"
 #import "UIFont+extension_FAN.h"
 #import "UIView+extension_FAN.h"
+#import "UIImage+extension.h"
+#import "NSBundle+extension.h"
 
 
 ///  FAN_View
