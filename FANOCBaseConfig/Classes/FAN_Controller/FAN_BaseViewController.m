@@ -64,8 +64,11 @@
 
 - (void)setTitle:(NSString *)title {
     [super setTitle:title];
+    
     self.titleLabel.text = title;
 }
+
+
 
 
 
@@ -77,8 +80,14 @@
 // 隐藏系统的导航栏
 - (void)hiddenNVView {
     if (self.navigationController) {
-//        [self.navigationController.navigationBar setHidden:YES];
-        [self.navigationController setNavigationBarHidden:YES animated:NO];
+        [self.navigationController.navigationBar setHidden:YES];
+//        self.navigationController.navigationBar.alpha = 0;
+        //        [self.navigationController setNavigationBarHidden:YES animated:NO];
+       
+        // 这个可以吧文字的颜色干掉
+        [self.navigationController.navigationBar setTitleTextAttributes:@{
+            NSForegroundColorAttributeName:[UIColor clearColor]
+        }];
     }
     self.view.backgroundColor = [UIColor whiteColor];
 
