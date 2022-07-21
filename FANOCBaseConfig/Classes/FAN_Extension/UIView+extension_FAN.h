@@ -81,6 +81,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)method_exchangeClassStr:(NSString *)clsString selector:(SEL)sourceSel selector:(SEL)newSel;
 
+#pragma mark 控制器方面的
+
+@property (nonatomic,weak)UINavigationController *currentnNavgationController;
+
+@property (nonatomic,weak)UIViewController *currentnPageViewController;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

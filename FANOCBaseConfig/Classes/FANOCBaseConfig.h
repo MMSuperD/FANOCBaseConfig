@@ -32,6 +32,7 @@
 #import "UIView+extension_FAN.h"
 #import "UIImage+extension.h"
 #import "NSBundle+extension.h"
+#import "UITableViewCell+extension_FAN.h"
 
 
 ///  FAN_View
@@ -42,6 +43,10 @@
 #import "FAN_BaseTableView.h"
 #import "FAN_BaseTableViewCell.h"
 #import "FAN_BaseTableViewHeaderFooterView.h"
+
+/// Object
+#import "FAN_BaseObject.h"
+#import "FAN_NavControllerObjectDelegate.h"
 
 
 #endif /* FANOCBaseConfig_h */

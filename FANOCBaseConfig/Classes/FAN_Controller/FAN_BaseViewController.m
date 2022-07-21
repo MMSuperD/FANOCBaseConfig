@@ -7,7 +7,10 @@
 
 #import "FAN_BaseViewController.h"
 #import <FANOCBaseConfig/UIImage+extension.h>
+#import <FANOCBaseConfig/FAN_NavControllerObjectDelegate.h>
 @interface FAN_BaseViewController ()
+
+@property (nonatomic,strong)FAN_NavControllerObjectDelegate *transitionDelegateObject;
 
 @end
 
@@ -17,6 +20,7 @@
     self = [super init];
     if (self) {
         self.isTurnOnNavRightPanGesture = YES;
+        self.isTrunOnTransitionAnimation = YES;
     }
     return self;
 }
@@ -35,12 +39,18 @@
     [super viewWillAppear:animated];
     NSLog(@"order:%s",__FUNCTION__);
     [self hiddenNVView];
+
     if (!self.isTurnOnNavRightPanGesture) {
         // 禁用返回手势
         if ([self.navigationController respondsToSelector:@selector(interactivePopGestureRecognizer)]) {
             self.navigationController.interactivePopGestureRecognizer.enabled = NO;
         }
     }
+    
+    if (self.navigationController && self.isTrunOnTransitionAnimation) {
+        self.navigationController.delegate = self.transitionDelegateObject;
+    }
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -344,11 +354,20 @@
     return _coverView;
 }
 
+- (FAN_NavControllerObjectDelegate *)transitionDelegateObject{
+    if (!_transitionDelegateObject) {
+        _transitionDelegateObject = [FAN_NavControllerObjectDelegate new];
+    }
+    return _transitionDelegateObject;
+}
+
 - (void)dealloc {
+   
     [[NSNotificationCenter defaultCenter] removeObserver:self name:FAN_BaseViewControllerRefreshDataNofication object:nil];
      NSString *notificationString = [NSString stringWithFormat:@"%@Notification",NSStringFromClass([self class])];
     [[NSNotificationCenter defaultCenter] removeObserver:self name:notificationString object:nil];
-    NSLog(@"%@",NSStringFromClass([self class]));
+   
+    NSLog(@"dealloc:%@",NSStringFromClass([self class]));
 }
 
 

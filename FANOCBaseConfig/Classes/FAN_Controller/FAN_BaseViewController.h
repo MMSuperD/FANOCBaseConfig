@@ -41,12 +41,14 @@ typedef void(^ReturnBlock_FAN)( _Nullable id);
 // 网络加载前的View(默认没有使用)
 @property (nonatomic,strong,nullable)UIView *coverView;
 
-
 // 返回Blcok
 @property (nonatomic,copy)ReturnBlock_FAN returnBlock;
 
 // 是否打开右滑导航控制器的右侧滑关闭页面的手势 默认打开 可以侧滑
 @property (nonatomic,assign)BOOL isTurnOnNavRightPanGesture;
+
+// 是否开启导航控制器的转场动画效果 默认不开启
+@property (nonatomic,assign)BOOL isTrunOnTransitionAnimation;
 
 
 // 自定义导航栏 默认是有导航栏的 需要重写该方法
