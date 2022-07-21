@@ -47,7 +47,9 @@ typedef void(^ReturnBlock_FAN)( _Nullable id);
 // 是否打开右滑导航控制器的右侧滑关闭页面的手势 默认打开 可以侧滑
 @property (nonatomic,assign)BOOL isTurnOnNavRightPanGesture;
 
-// 是否开启导航控制器的转场动画效果 默认不开启
+// 是否开启导航控制器的转场动画效果 默认开启,当开启转场动画之后,我们如果要用导航控制器的delegate
+//我们就需要继承FAN_NavControllerObjectDelegate 这个类,不然我们的转场动画效果就消失了,每个页面都有相应的转场代理对象,是独立的,
+//你设置了你得页面,也只是对当前页面有效,其他的界面依然也会有转场效果
 @property (nonatomic,assign)BOOL isTrunOnTransitionAnimation;
 
 
